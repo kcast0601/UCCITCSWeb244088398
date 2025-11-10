@@ -1,0 +1,141 @@
+/* Body setup with subtle gradient background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #c3ffe7 0%, #ffffff 100%);
+  margin: 30px;
+  color: #444;
+}
+
+/* Centered title with modern font and subtle shadow */
+#title {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 5px;
+}
+
+/* Description with calming color and spacing */
+#description {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 35px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+/* Form container with soft shadow & rounded corners */
+form#survey-form {
+  background-color: #ffffffdd;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 35px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(44, 62, 80, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+form#survey-form:hover {
+  box-shadow: 0 14px 40px rgba(44, 62, 80, 0.25);
+}
+
+/* Label styling with smooth font and gentle spacing */
+label {
+  display: block;
+  font-weight: 600;
+  color: #34495e;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.05em;
+}
+
+/* Input, select, and textarea with soft borders and transitions */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1em;
+  border: 2px solid #bdc3c7;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+  outline: none;
+  background-color: #f0faff;
+}
+
+/* Radio and checkbox input alignment */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/* Inline labels for radio and checkboxes with spacing */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  font-weight: 500;
+  color: #34495e;
+  margin-right: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Submit button with gradient & shadow */
+button#submit {
+  margin-top: 30px;
+  width: 100%;
+  padding: 16px 0;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(145deg, #2980b9, #3498db);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(41, 128, 185, 0.5);
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button#submit:hover {
+  background: linear-gradient(145deg, #3498db, #2980b9);
+  box-shadow: 0 7px 20px rgba(41, 128, 185, 0.7);
+}
+
+/* Responsive: reduce padding and font sizes on smaller screens */
+@media (max-width: 600px) {
+  form#survey-form {
+    padding: 25px 20px;
+  }
+
+  #title {
+    font-size: 2em;
+  }
+
+  #description {
+    font-size: 1em;
+  }
+
+  button#submit {
+    font-size: 1.1em;
+    padding: 14px 0;
+  }
+}
